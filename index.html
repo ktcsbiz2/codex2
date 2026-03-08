@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미니 아케이드: 블록 피하기</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <h1>🕹️ 미니 아케이드: 블록 피하기</h1>
+      <p class="help">← → 방향키로 이동하고 떨어지는 블록을 피하세요. 점수는 생존 시간입니다.</p>
+      <section class="hud">
+        <div>점수: <span id="score">0</span></div>
+        <div>최고점수: <span id="best">0</span></div>
+      </section>
+      <canvas id="game" width="480" height="640" aria-label="아케이드 게임"></canvas>
+      <button id="restart" type="button">다시 시작</button>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
